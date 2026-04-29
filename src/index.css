@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-jeopardy-blue: #060ce9;
+  --color-jeopardy-gold: #ffcc00;
+  --color-jeopardy-dark: #000033;
+}
+
+@layer base {
+  body {
+    @apply bg-jeopardy-dark text-white font-sans antialiased;
+  }
+}
+
+.jeopardy-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
